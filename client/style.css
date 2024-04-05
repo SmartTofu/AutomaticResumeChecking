@@ -1,0 +1,75 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(25, 25, 25);
+    overflow: auto;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    overflow: hidden;
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+    min-height: 50vh;
+    min-width: 50vw;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card{
+    margin: 50px;
+    border-radius: 25px;
+    width: 500px;
+    min-width: 4rem;
+    height:500px;
+    min-height: 4rem;
+    background-color: rgba(240, 248, 255, 0.205);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.card h2{
+    margin-top: 40%;
+    color: whitesmoke;
+    font-size: 3rem;
+    user-select: none;
+}
+
+main h1{
+    margin: 50px;
+    text-align: center;
+    font-size: 4rem;
+    color: whitesmoke;
+}
